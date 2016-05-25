@@ -11,8 +11,13 @@ namespace App
        public int Second (int a ,int b)
       {
          int result= a*b;
-          System.Console.WriteLine(" Multiplying {0} on {1}",a,b);
+          System.Console.WriteLine("I can multiply {0} on {1}",a,b);
           return result;
+      }
+      public int Third (int a,int b){
+          int result= a/b;
+         System.Console.WriteLine("I can divide {0} on {1}",a,b);
+          return result; 
       }
       
       static void Main(string[] args)
@@ -24,6 +29,7 @@ namespace App
         
         int m = n.Second(2,3);
         System.Console.WriteLine("{0}",m);
+       
          
       }
    }
