@@ -1,11 +1,37 @@
 using System;
 namespace App
 {
-public class NumberManipulator
-{
-    static void Main()
+   class NumberManipulator
    {
-      System.Console.WriteLine("Hello,Binary Studio!");
+      public void First()
+      {
+         
+          System.Console.WriteLine("My name is Yevhen.Look what I can ! ");
+      }
+       public int Second (int a ,int b)
+      {
+         int result= a*b;
+          System.Console.WriteLine("I can multiply {0} on {1}",a,b);
+          return result;
+      }
+      public int Third (int a,int b){
+          int result= a/b;
+         System.Console.WriteLine("I can divide {0} on {1}",a,b);
+          return result; 
+      }
+      
+      static void Main(string[] args)
+      {
+        System.Console.WriteLine("Hello , Binary Studio");
+         NumberManipulator n = new NumberManipulator();
+
+        n.First();
+        
+        int m = n.Second(2,3);
+        System.Console.WriteLine("{0}",m);
+        int z = n.Third(10,5);
+        System.Console.WriteLine("{0}",z);
+         
+      }
    }
-}
 }
