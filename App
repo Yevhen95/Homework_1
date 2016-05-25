@@ -1,0 +1,30 @@
+using System;
+namespace App
+{
+   class NumberManipulator
+   {
+      public void First()
+      {
+         
+          System.Console.WriteLine("My name is Yevhen.Look what I can ! ");
+      }
+       public int Second (int a ,int b)
+      {
+         int result= a*b;
+          System.Console.WriteLine(" Multiplying {0} on {1}",a,b);
+          return result;
+      }
+      
+      static void Main(string[] args)
+      {
+        System.Console.WriteLine("Hello , Binary Studio");
+         NumberManipulator n = new NumberManipulator();
+
+        n.First();
+        
+        int m = n.Second(2,3);
+        System.Console.WriteLine("{0}",m);
+         
+      }
+   }
+}
