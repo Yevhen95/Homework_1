@@ -3,6 +3,19 @@ namespace App
 {
    class NumberManipulator
    {
+   static void Main(string[] args)
+      {
+        System.Console.WriteLine("Hello , Binary Studio");
+         NumberManipulator n = new NumberManipulator();
+
+        n.First();
+        
+        int m = n.Second(2,3);
+        System.Console.WriteLine("{0}",m);
+        int z = n.Third(10,5);
+        System.Console.WriteLine("{0}",z);
+         
+      }
       public void First()
       {
          
@@ -20,18 +33,6 @@ namespace App
           return result; 
       }
       
-      static void Main(string[] args)
-      {
-        System.Console.WriteLine("Hello , Binary Studio");
-         NumberManipulator n = new NumberManipulator();
-
-        n.First();
-        
-        int m = n.Second(2,3);
-        System.Console.WriteLine("{0}",m);
-        int z = n.Third(10,5);
-        System.Console.WriteLine("{0}",z);
-         
-      }
+      
    }
 }
